@@ -15,7 +15,7 @@ class ListBooks extends Component {
     this.setState({isLoading: true}, () =>
     // TODO: Panggil API dengan method GET untuk mendapat semua data yang terdapat pada database.
     axios
-    .get("https://library2020-api-ambiya.herokuapp.com//library")
+    .get("https://library2020-api-ambiya.herokuapp.com/library")
     .then(res =>{
       console.log(res);
       context.setState({

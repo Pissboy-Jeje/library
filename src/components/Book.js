@@ -15,7 +15,7 @@ class Book extends Component {
 
   // TODO: Isi fungsi untuk memanggil method PUT untuk fitur merubah status peminjaman
   EditBook = buku => {
-    axios.put("https://library2020-api-ambiya.herokuapp.com//library"+buku._id, buku)
+    axios.put("https://library2020-api-ambiya.herokuapp.com/library"+buku._id, buku)
       .then(res => {
         // ubah kembali state modal menjadi false
         this.setState({modal: false})
